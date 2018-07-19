@@ -1,8 +1,13 @@
 <template>
 
 	<div id="app">
-		<router-view/>
-		<MenuButton v-if="!showMenu" @clicked="showMenu = true" />
+		
+		<transition-group name="fade">
+			<router-view key="view" />
+			<MenuButton key="button" v-if="!showMenu" @clicked="showMenu = true" />
+			<MenuContainer key="menu" v-else @close="showMenu = false" />
+		</transition-group>
+
 	</div>
 	
 </template>
@@ -14,11 +19,13 @@
 <script>
 
 	import MenuButton from '@/components/menu/MenuButton';
+	import MenuContainer from '@/components/menu/MenuContainer';
 
 	export default {
 
 		components: {
-			MenuButton
+			MenuButton,
+			MenuContainer
 		},
 		data() {
 			return {

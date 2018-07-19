@@ -3,6 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store/store";
 
+import VueParticles from 'vue-particles'
+
+Vue.use(VueParticles)
+
 import 'font-awesome/css/font-awesome.css';
 
 Vue.config.productionTip = false;
