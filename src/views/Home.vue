@@ -1,6 +1,7 @@
 <template>
 
 	<div class="home-container">
+
 		<div class="hero dark fullheight row middle-xs">
 			<div class="container hero-body">
 
@@ -20,6 +21,7 @@
 				
 			</div>
 		</div>
+		
 		<vue-particles class="particles" color="#F9CE06" />
 
 	</div>

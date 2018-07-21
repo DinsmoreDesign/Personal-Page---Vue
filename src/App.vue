@@ -49,13 +49,11 @@
 		font-family: sans-serif;
 		-ms-text-size-adjust: 100%;
 		-webkit-text-size-adjust: 100%;
-
 		font-size: 62.5%;
 	}
 	
 	body {
 		margin: 0;
-
 		font-size: 1.5em;
 		line-height: 1.6;
 		font-weight: 400;
